@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1e3c72">
+<meta charset="UTF-8">
+<title>Calculator Store - Rohit Kewat</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="hero"><center>
+  <h1>Smart Calculations. Smarter Life.</h1>
+</section>
+<section id="about" class="about-section">
+  <h2>About Calculator Store</h2>
+</section>
+<section id="contact" class="contact-section">
+  <h2>Contact Us</h2>
+  <p>📞 Phone: <a href="tel:+919098355619">+919098355619</a></p>
+  <p>📧 Email: <a href="mailto:rohitkewatram90983@gmail.com">rohitkewatram90983@gmail.com</a></p>
+</section>
+
+<!-- YAHAN ADD KARNA HAI -->
+<section class="products" id="productContainer"></section>
+<script>
+if (!localStorage.getItem("loggedInUser")) {
+  window.location.href = "login.html";
+}
+</script>
+<header>
+  <h1>🧮 Calculator Store</h1>
+  <p>All Types of Calculators Available</p>
+  <p class="owner">👑 Calculator Store founded by Rohit Kewat 👑  
+    We provide premium quality calculators for students,
+    engineers and professionals.</p>
+  <button onclick="toggleDarkMode()">🌙</button>
+</header>
+
+<section class="products">
+
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyHffFBYf_DwpirXO7TNZxXDlKNhny4AB1dA&s">
+    <h2>Basic Calculator</h2>
+    <p>Simple calculator for daily use</p>
+    <h3>₹299</h3>
+    <button onclick="goToPayment()">Buy Now</button>
+  </div>
+
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIpenIWVO63nJEYgRFkv-YBXcNvlwsZZns9g&s">
+    <h2>Scientific Calculator</h2>
+    <p>Best for students & engineers</p>
+    <h3>₹899</h3>
+    <button onclick="goToPayment()">Buy Now</button>
+  </div>
+
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9HPdsBZxZqphFLYxKp19wAaNi8G24F7zTSQ&s">
+    <h2>Financial Calculator</h2>
+    <p>For business & finance work</p>
+    <h3>₹1499</h3>
+    <button onclick="goToPayment()">Buy Now</button>
+  </div>
+
+  <div class="card">
+    <img src="https://www.casio.com/content/dam/casio/product-info/locales/us/en/calc/product/scientific/F/FX/FX9/FX-9750GIII-PK/assets/FX-9750GIII-PK_1.png.transform/main-visual-sp/image.png">
+    <h2>Graphing Calculator</h2>
+    <p>Advanced graph calculations</p>
+    <h3>₹2499</h3>
+    <button onclick="goToPayment()">Buy Now</button>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 Calculator Store | Made with ❤️</p>
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js")
+    .then(() => console.log("Service Worker Registered"));
+}
+</script>
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/service-worker.js");
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+<body>
+
+<nav class="navbar">
+  <div class="logo">🧮 CalcStore</div>
+  <div class="nav-links">
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <button onclick="logout()" class="logout-btn">Logout</button>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1 class="gradient-text">Premium Calculator Store</h1>
+  <p>Smart Calculations. Smarter Future.</p>
+  <a href="#products"><button class="hero-btn">Explore Now</button></a>
+</section>
+
+<section id="products" class="products" id="productContainer">
+</section>
+
+<section id="about" class="about-section">
+  <h2>About Us</h2>
+  <p>
+    Founded by Rohit Kewat 👑  
+    We deliver premium calculators for students,
+    engineers and professionals.
+  </p>
+</section>
+
+<section id="contact" class="contact-section">
+  <h2>Contact Us</h2>
+  <p>📞 <a href="tel:+91XXXXXXXXXX">+91 XXXXXXXXXX</a></p>
+  <p>📧 <a href="mailto:youremail@gmail.com">youremail@gmail.com</a></p>
+</section>
+
+<footer class="footer">
+  © 2026 CalcStore | Designed by Rohit Kewat 👑
+</footer>
+
+<script src="script.js"></script>
+</body>
