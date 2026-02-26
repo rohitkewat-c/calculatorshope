@@ -355,3 +355,91 @@ body {
   from { opacity:0; transform: translateY(40px); }
   to { opacity:1; transform: translateY(0); }
 }
+
+
+
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+}
+
+/* FULL PAGE BACKGROUND */
+.auth-body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#141e30,#243b55);
+}
+
+/* MAIN CONTAINER */
+.auth-container{
+display:flex;
+width:800px;
+height:450px;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* LEFT SIDE */
+.auth-left{
+flex:1;
+background:linear-gradient(135deg,#ff512f,#dd2476);
+color:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+/* RIGHT SIDE */
+.auth-box{
+flex:1;
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(20px);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:30px;
+color:white;
+animation:fadeIn 1s ease;
+}
+
+.auth-box input{
+width:100%;
+padding:10px;
+margin:10px 0;
+border:none;
+border-radius:8px;
+outline:none;
+}
+
+.auth-box button{
+width:100%;
+padding:10px;
+border:none;
+border-radius:25px;
+background:linear-gradient(45deg,#00c6ff,#0072ff);
+color:white;
+cursor:pointer;
+transition:0.3s;
+}
+
+.auth-box button:hover{
+transform:scale(1.05);
+}
+
+.auth-box a{
+color:#00c6ff;
+text-decoration:none;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(20px);}
+to{opacity:1;transform:translateY(0);}
+}
